@@ -9,10 +9,12 @@ public class Inheritance {
         // System.out.println(I.gety());
 
 
-    Dog goldenretriever= new Dog();
-    goldenretriever.name = "frankie";
-    System.out.println(goldenretriever.name);
-    goldenretriever.Print_landanimal();
+    // Dog goldenretriever= new Dog("dogs","goats");
+    // goldenretriever.name = "frankie";
+    // System.out.println(goldenretriever.name);
+    // goldenretriever.Print_landanimal();
+
+    Cats c = new Cats("mrinal","harsh","himanshu");
         
     }
 
@@ -65,9 +67,39 @@ class Animal{
     void Water_animal(){
         System.out.println("they live in water");
     }
+
+    public Animal(){
+        System.out.println("all animals are good");
+    }
+
+    public Animal(String name){
+        System.out.println("this type of animals ar more sweet and friendly : "+ name);
+    }
 }
 
 class Dog extends Animal{
-    String name;
+    public Dog(){
+    // super("dogs");
+    System.out.println("i am the constructor of the derived class");
+}
+
+public Dog(String name1, String name2){
+    super(name1);
+    System.out.println("overload constructor of derived class and printing the value of the name2 "+ name2);
+}
+   
+}
+
+
+class Cats extends Dog{
+
+    public Cats(){
+        System.out.println("this is the child class of the dog class");
+    }
+
+    public Cats(String name1,String name2, String name3){
+        super(name1,name2);
+        System.out.println("this will prin the name as : "+ name3);
+    }
 }
 
