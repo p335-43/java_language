@@ -1,3 +1,2 @@
- // Ekclass(int v){
-    //     a=v;
-    // }
+ // One n = new One();
+        // n.pt();
