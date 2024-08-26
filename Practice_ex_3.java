@@ -17,7 +17,7 @@ public class Practice_ex_3 {
         }
 
         System.out.println(g.get());
-        
+    
 
         
 
